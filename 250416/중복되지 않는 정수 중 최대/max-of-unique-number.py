@@ -3,16 +3,18 @@ nums = list(map(int, input().split()))
 
 # Please write your code here.
 
-dup_arr = []
-max_val = nums[0]
-for i in range(1,n) :
-    if nums[i] not in dup_arr and max_val < nums[i] :
-        max_val = nums[i]
-    elif nums[i] in dup_arr :
-        max_val = -1    
+max_val = -1
+for curr_num in nums :
+    if max_val < curr_num :
+        count = 0 
+        for elem in nums :
+            if elem == curr_num :
+                count+= 1
+        
+        if count == 1 :
+            max_val = curr_num
+  
     
-    dup_arr.append(nums[i])
 
-
+    
 print(max_val)
-     
