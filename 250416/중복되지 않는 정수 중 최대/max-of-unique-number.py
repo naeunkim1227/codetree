@@ -18,18 +18,16 @@ max_val = -1
 
     
 # print(max_val)
-dup_arr = []
 
 for i in range(n) :
-    for elem in nums :
-      count = 0 
-      if elem == nums[i] :
-          count+= 1
+    cnt = nums.count(nums[i])
 
-if count > 1 :
-        dup_arr.append(nums[i])
+    if max_val < nums[i] and cnt == 1 :
+        max_val = nums[i]
 
 
-print(dup_arr)
+
+
+print(max_val)
 
     
