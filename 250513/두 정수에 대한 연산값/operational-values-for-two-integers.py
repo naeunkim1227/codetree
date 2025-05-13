@@ -1,7 +1,7 @@
 a, b = map(int, input().split())
 
 # Please write your code here.
-def ab(a,b) : 
+def number(a,b) : 
     if a > b :
         a += 25
         d *= 2
@@ -10,5 +10,5 @@ def ab(a,b) :
         a *= 2 
     return a,b
 
-a,b = ab(a,b)
+a,b = number(a,b)
 print(a,b)
