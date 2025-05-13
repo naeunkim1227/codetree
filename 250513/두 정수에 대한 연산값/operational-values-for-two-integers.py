@@ -3,16 +3,13 @@ a, b = map(int, input().split())
 # Please write your code here.
 
 def ab(a,b) : 
-    c = a
-    d = b
     if a > b :
-        c = a+25
-        d = b*2
+        a += 25
+        d *= 2
     else :
-        d = b+25
-        c = a*2 
-    print(c, d)
+        b += 25
+        a *= 2 
+    return a,b
 
-
-
-ab(a,b)
+a,b = ab(a,b)
+print(a,b)
