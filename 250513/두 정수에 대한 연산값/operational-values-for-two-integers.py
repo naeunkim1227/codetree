@@ -1,7 +1,6 @@
 a, b = map(int, input().split())
 
 # Please write your code here.
-
 def ab(a,b) : 
     if a > b :
         a += 25
