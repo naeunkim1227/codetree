@@ -7,12 +7,10 @@ class Practice :
         self.id = id
         self.level = level
 
-
-
 p = Practice()
-print("user", p.id , "lv", p.level)
+print(f"user {p.id} lv {p.level}")
 
 p.id = user2_id
 p.level = user2_level
-print("user", p.id , "lv", p.level)
+print(f"user {p.id} lv {p.level}")
 
