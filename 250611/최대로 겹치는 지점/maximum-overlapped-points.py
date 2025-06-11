@@ -7,8 +7,6 @@ offset = 100
 max_n = 200
 
 blocks = [0] * max_n
-
-
     
 for a,b in segments : 
     a,b = a + offset, b + offset
