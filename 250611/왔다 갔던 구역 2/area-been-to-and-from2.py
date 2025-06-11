@@ -9,16 +9,20 @@ for _ in range(n):
 # Please write your code here.
 
 
-blocks = [0] * 30
-
+blocks = [0] * 2000
+offset = 1000
 point = 0
 
+
 for i in range(n) :
+
     if dir[i] == 'R' :
-        for j in range(point,x[i]+1) :
+        a = x[i] + 1 +offset
+        for j in range(point,a) :
             blocks[j] += 1
     else :
-        for j in range(x[i]-1,point,-1) :
+        a = x[i] -1 + offset
+        for j in range(a,point,-1) :
             blocks[j] += 1
 
 
