@@ -1,4 +1,4 @@
-MAX_K = 1000
+MAX_K = 10000
 n = int(input())
 a = [0] * (2 * MAX_K + 1)
 cnt_b = [0] * (2 * MAX_K + 1)
