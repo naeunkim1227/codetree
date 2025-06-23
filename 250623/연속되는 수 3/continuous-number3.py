@@ -10,9 +10,7 @@ for i in range(N) :
     else :
         cnt = 1
 
-
-    if max_cnt <= cnt :
-        max_cnt = cnt
+    max_cnt = max(max_cnt,cnt)
 
 
 print(max_cnt)
