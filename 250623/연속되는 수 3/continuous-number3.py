@@ -3,8 +3,7 @@ arr = [int(input()) for _ in range(N)]
 
 # Please write your code here.
 
-cnt = 1
-max_cnt = cnt
+cnt,max_cnt = 0,0
 for i in range(N) :
     if i >= 0 and (arr[i] * arr[i-1]> 0) :
         cnt += 1    
