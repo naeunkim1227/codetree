@@ -4,18 +4,15 @@ arr = [int(input()) for _ in range(n)]
 # Please write your code here.
 
 
-cnt = 0
-arr_cnt = 1
-blocks = []
+ans, cnt = 0. 0
 for i in range(n):
-    if i == 0 or arr[i] != arr[i-1] :
+    if i == 0 or arr[i] == arr[i-1] :
         cnt += 1
-        blocks.append(arr_cnt)
     else :
-        arr_cnt += 1
+        cnt = 1
 
-
+    ans = max(ans,cnt)
     
 
 
-print(max(blocks))
+print(ans)
