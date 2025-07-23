@@ -1,16 +1,15 @@
-# import sys
+import sys
 
 n = int(input())
 A = list(map(int, input().split()))
 
 # Please write your code here.
 
-max_distance = 0;
+min_distance = sys.maxsize;
 for i in range(n) :
     distance = 0 
     for j in range(n) : 
-        distance +=  abs(i - j) * A[j] 
-        max_distance = max(max_distance,distance)
+        distance +=  abs(j-i) * A[j] 
+    min_distance = min(min_distance,distance)
 
-
-print(max_distance)
+print(min_distance)
