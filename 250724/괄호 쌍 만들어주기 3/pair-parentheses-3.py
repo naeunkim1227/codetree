@@ -1,9 +1,11 @@
 A = input()
-cnt = 0
+n = len(A)
 
+
+cnt = 0
 # Please write your code here.
-for i in range(len(A)) :
-    for j in range(i+1,len(A)) :
+for i in range(n) :
+    for j in range(i+1,n) :
         if A[i] == '(' and A[j] == ')' :
             cnt+= 1
 
